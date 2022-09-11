@@ -1,0 +1,10 @@
+* {
+  box-sizing: content-box;
+  margin: 10 0;
+  padding: 0;
+  display: 'block';
+}
+
+html {
+  font-family: sans-serif;
+}
