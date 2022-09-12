@@ -1,0 +1,26 @@
+fieldset {
+    margin: 10px 10%;
+}
+
+label::before {
+    content: '\a';
+    white-space: pre;
+}
+
+input {
+    margin-left: 25px;
+}
+
+label {
+    display: block;
+    padding-left: 25px;
+}
+
+button {
+    display: flex;
+    width: 20%;
+    margin: 10px 40%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
