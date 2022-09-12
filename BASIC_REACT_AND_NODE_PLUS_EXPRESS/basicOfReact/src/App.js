@@ -6,14 +6,8 @@ import "./styles/App.css";
 
 class App extends React.Component {
   boxesOwners = ["Monka", "Iza", "Borges", "Raymund"]
-  userNameAndRate = {
-    username: "",
-    rate: 0
-  }
   handleNewUserAndRate = (nameAndRate) => {
-    this.userNameAndRate.username = nameAndRate.username
-    this.userNameAndRate.rate = nameAndRate.rate
-    window.alert(`Thanks ${this.userNameAndRate.username} for u our platform is ${this.userNameAndRate.rate}!!`)
+    window.alert(`Thanks ${nameAndRate.username} for u our platform is ${nameAndRate.rate}!!`)
   }
   renderingBoxes = () => {
     return (
