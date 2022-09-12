@@ -106,3 +106,4 @@ dist
 # Lockfiles
 package-lock.json
 *.lock
+.DS_Store
