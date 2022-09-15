@@ -1,0 +1,15 @@
+.box-red, .box-green {
+    width: 10rem;
+    height: 10rem;
+    border: 5px solid white;
+}
+  
+.box-red {
+    background: red;
+    margin-left: 10%;
+}
+  
+.box-green {
+    background: green;
+    margin-left: 15%;
+}
