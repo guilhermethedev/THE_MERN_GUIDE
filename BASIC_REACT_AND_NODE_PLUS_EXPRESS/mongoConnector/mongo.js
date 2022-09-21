@@ -19,7 +19,16 @@ const createProduct = async(req, res, next) => {
 }
 
 const getProducts = async(req,res, next) => {
-
+    const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+    let products;
+    try {
+        await client.connect();
+        products = await client.db().collection('Products').find().toArray();
+    } catch (error) {
+        return res.json({ message: "Could not retrieve products" })
+    }
+    client.close();
+    res.json(products)
 }
 
 exports.createProduct = createProduct;
