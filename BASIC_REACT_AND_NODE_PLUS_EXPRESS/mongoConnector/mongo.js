@@ -1,4 +1,9 @@
+require('dotenv').config()
 const { MongoClient, ServerApiVersion } = require('mongodb');
+
+const USERNAME = process.env.MONGO_USER;
+const PASSWORD = process.env.MONGO_PASSWORD;
+const DATABASE = process.env.MONGO_DATABASE;
 
 const url = 'mongodb+srv://GuilhermeBorges:8aAyEP2BTC9stHhX@cluster0.wih8ysw.mongodb.net/FictionalStore?retryWrites=true&w=majority';
 
